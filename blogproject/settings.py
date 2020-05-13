@@ -25,7 +25,7 @@ SECRET_KEY = 'pfceuw=dk*h-!$bx+9pp1u&0bqtx=qtfne(gnz9ui$4s7fp^-8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["jashblogapp.herokuapp.com"]
 
 
 # Application definition
