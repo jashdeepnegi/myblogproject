@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+    <h2 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h2>
     {% for post in posts %}
          
     <article class="media content-section">
@@ -11,7 +11,7 @@
                 <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
                 <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
             </div>
-            <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+            <h3><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h3>
             <p class="article-content">{{ post.content }}</p>
         </div>
     </article>
